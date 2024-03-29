@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <main class="w-full h-dvh flex">
+        <section class="w-1/2  h-full rounded-r-rad hidden lg:block" style="
+        background: url(./image/chris-lee-70l1tDAI6rM-unsplash.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      "></section>
+
+        <section class="w-full lg:w-1/2 flex justify-center items-center">
+            <div class="w-full md:w-wid px-4 md:p-0">
+                <h1 id="heading" class="text-lg leading-6 md:leading-10 md:text-3xl font-medium">Welcome back!</h1>
+
+                <!-- sign in form -->
+                <form id="signin" action="" class="md:mt-24">
+                    <!-- email -->
+                    <div class="md:w-wid my-5">
+                        <label class="text-base capitalize font-normal md:text-lg md:font-semibold" for="email">Email address</label> <br>
+                        <input class="w-full border-2 border-Gray p-3 rounded-2xl" type="email" placeholder="enter your email">
+                    </div>
+                    <!-- password -->
+                    <div class="w-full md:w-wid my-5">
+                        <div class="w-full flex justify-between items-center">
+                            <label class="text-base capitalize font-normal md:text-lg md:font-semibold" for="password">password</label>
+                            <p class="text-xs text-link font-medium"><a href="">forgot password</a></p>
+                        </div>
+                        <input class="w-full border-2 border-Gray p-3 rounded-2xl" type="password" placeholder="enter your password">
+                    </div>
+
+                    <!-- btn -->
+                    <div  class="w-full md:w-wid my-5">
+                        <input class="w-full border-2 border-Gray p-3 rounded-2xl bg-Green text-white font-bold text-sm" type="button" value="Sign in">
+                    </div>
+
+                    <p>Don’t have an account? <span id="register_link" class="text-link cursor-pointer">Sign up</span></p>
+                </form>
+
+                <!-- register form -->
+                <form id="register" action="" class="md:mt-24 hidden">
+                    <!-- name -->
+                    <div class="md:w-wid my-5">
+                        <label class="text-base capitalize font-normal md:text-lg md:font-semibold" for="name">name</label> <br>
+                        <input class="w-full border-2 border-Gray p-3 rounded-2xl" type="text" placeholder="enter your full name">
+                    </div>
+                    <!-- email -->
+                    <div class="md:w-wid my-5">
+                        <label class="text-base capitalize font-normal md:text-lg md:font-semibold" for="email">Email address</label> <br>
+                        <input class="w-full border-2 border-Gray p-3 rounded-2xl" type="email" placeholder="enter your email">
+                    </div>
+                    <!-- password -->
+                    <div class="w-full md:w-wid my-5">
+                        <label class="text-base capitalize font-normal md:text-lg md:font-semibold" for="password">password</label> <br>
+                        <input class="w-full border-2 border-Gray p-3 rounded-2xl" type="password" placeholder="enter your password">
+                    </div>
+                    <!-- checkbox -->
+                    <div class="w-full md:w-wid my-5 ">
+                        <input type="checkbox"> <span class="text-xs font-medium">I agree to the <a href="#" class="border-b border-gray-400 my-4">terms & policy</a></span>
+                    </div>
+
+                    <!-- btn -->
+                    <div  class="w-full md:w-wid my-5">
+                        <input class="w-full border-2 border-Gray p-3 rounded-2xl bg-Green text-white font-bold text-sm" type="button" value="Sign up">
+                    </div>
+
+                    <p>Have an account? <span id="signin_link" class="text-link cursor-pointer">Sign In</span></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>
